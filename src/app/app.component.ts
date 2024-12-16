@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { HomeComponent } from "./home/home.component";
+import { RouterModule } from "@angular/router";
 // Lesson-4: https://angular.dev/tutorials/first-app/04-interfaces
 @Component({
   standalone: true,
@@ -13,12 +14,12 @@ import { HomeComponent } from "./home/home.component";
         aria-hidden="true"
       />
     </header>
-    <section>
-      <app-home></app-home>
+    <section class="content">
+      <router-outlet></router-outlet>
     </section>
   </main>`,
   styleUrls: ["./app.component.css"],
-  imports: [HomeComponent],
+  imports: [HomeComponent, RouterModule],
 })
 export class AppComponent {
   title = "homes";
