@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { HomeComponent } from "./home/home.component";
 import { RouterModule } from "@angular/router";
-// Lesson-4: https://angular.dev/tutorials/first-app/04-interfaces
+
 @Component({
   standalone: true,
   selector: "app-root",
